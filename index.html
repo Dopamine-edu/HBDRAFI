@@ -2,26 +2,23 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <!-- এই মেটা ট্যাগটি রেসপনসিভ ডিজাইনের জন্য সবচেয়ে গুরুত্বপূর্ণ -->
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>অক্সিটোসিন নিউজ ১৩</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', "Noto Sans Bengali", sans-serif;
-            /* বেস ফন্ট সাইজ স্বাভাবিক রাখা হলো, টেইলউইন্ড এটা নিয়ন্ত্রণ করবে */
         }
-        /* ছোট স্ক্রিনে নেভিগেশন বার যেন উপচে না পড়ে */
         .mobile-nav-scroll {
             overflow-x: auto;
             white-space: nowrap;
         }
         .mobile-nav-scroll::-webkit-scrollbar {
-            display: none; /* ক্রোম, সাফারি-তে স্ক্রলবার হাইড করার জন্য */
+            display: none;
         }
         .mobile-nav-scroll {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
@@ -37,7 +34,6 @@
             </h1>
             <!-- তারিখ -->
             <div class="text-right">
-                <!-- মোবাইলের জন্য তারিখের ফন্ট ছোট করা হলো -->
                 <p class="text-base sm:text-lg font-semibold">সোমবার, ৩ নভেম্বর, ২০২৫</p>
                 <p class="text-xs sm:text-sm">যশোর সংস্করণ</p>
             </div>
@@ -45,7 +41,6 @@
         <!-- নেভিগেশন বার (ফেইক) -->
         <nav class="bg-gray-800 text-white">
             <div class="max-w-6xl mx-auto px-2 sm:px-4">
-                <!-- ছোট স্ক্রিনের জন্য স্ক্রলযোগ্য করা হলো -->
                 <ul class="flex space-x-4 sm:space-x-6 py-2 mobile-nav-scroll">
                     <li class="hover:bg-red-600 px-3 py-1 rounded-md flex-shrink-0"><a href="#">হোম</a></li>
                     <li class="hover:bg-red-600 px-3 py-1 rounded-md flex-shrink-0"><a href="#">অপরাধ</a></li>
@@ -60,25 +55,26 @@
     </header>
 
     <!-- মূল সংবাদ -->
-    <!-- মোবাইলের জন্য প্যাডিং কমানো হলো (p-4) -->
     <main class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg mt-4 sm:mt-6 p-4 sm:p-6 md:p-8">
         
-        <!-- প্রধান শিরোনাম (মোবাইলে text-2xl) -->
+        <!-- ... (বাকি সব কন্টেন্ট একই থাকবে) ... -->
+
+        <!-- প্রধান শিরোনাম -->
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-red-800 mb-3 leading-tight">
             যশোরে তরুণদের মধ্যে বাড়ছে এইডস সংক্রমণ
         </h1>
-        <!-- উপ-শিরোনাম (মোবাইলে text-lg) -->
+        <!-- উপ-শিরোনাম -->
         <p class="text-lg sm:text-xl text-gray-700 mb-6 font-semibold">
             বিশেষজ্ঞরা বলছেন 'অসামাজিক কার্যকলাপ' ও 'বিজাতীয় সংস্কৃতি'ই দায়ী! এক তরুণের বেডরুমের ছবি ও ভিডিও ফাঁস!
         </p>
 
-        <!-- রিপোর্টারের তথ্য (মোবাইলে ভার্টিক্যালি স্ট্যাক করা হলো) -->
+        <!-- রিপোর্টারের তথ্য -->
         <div class="flex flex-col sm:flex-row justify-between sm:items-center border-y-2 border-gray-200 py-3 mb-6 space-y-3 sm:space-y-0">
             <div>
                 <p class="text-red-600 font-bold text-base sm:text-lg">বিশেষ অনুসন্ধানী দল</p>
                 <p class="text-gray-500 text-xs sm:text-sm">প্রকাশিত: ৩ নভেম্বর ২০২৫, রাত ১০:৫৭</p>
             </div>
-            <!-- ফেইক শেয়ার বাটন ও ভিউ কাউন্ট -->
+            <!-- শেয়ার বাটন ও ভিউ কাউন্ট -->
             <div class="flex items-center space-x-2">
                 <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Share</span>
                 <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Tweet</span>
@@ -93,19 +89,15 @@
             </div>
         </div>
 
-        <!-- সংবাদ শুরু -->
-
-        <!-- ছবি যোগ করার জায়গা -->
+        <!-- ... (ছবির সেকশন) ... -->
         <div class="w-full bg-gray-200 border-4 border-dashed border-gray-400 rounded-lg p-4 text-center mb-4">
-            <!-- মোবাইলের জন্য টেক্সট সাইজ অ্যাডজাস্ট করা হলো -->
-            
             <img src="যশোরে তরুণদের মধ্যে বাড়ছে এইডস সংক্রমণ.png" alt="ফাঁস হওয়া ছবি" class="w-full rounded-lg">
         </div>
         <p class="text-center text-gray-600 italic text-sm mb-6">
             ফাঁস হওয়া সেই বিতর্কিত ছবি, যেখানে দুই বন্ধুকে 'অস্বাভাবিক' অবস্থায় দেখা যাচ্ছে। (ছবি: প্রধান গোয়েন্দা ইমন)
         </p>
 
-        <!-- মূল টেক্সট (মোবাইলের জন্য text-base) -->
+        <!-- ... (আর্টিকেল টেক্সট) ... -->
         <article class="space-y-6 text-gray-800 text-base sm:text-lg leading-relaxed">
             <p class="font-bold text-lg sm:text-xl">যশোর ব্যুরো:</p>
             <p>
@@ -121,12 +113,9 @@
                 এই তরুণের কুকীর্তি শুধু এখানেই শেষ নয়। আমাদের হাতে আসা এক চাঞ্চল্যকর ভিডিও ফুটেজে দেখা যায়, অভিযুক্ত তরুণ ও তার কতিপয় বন্ধুকে যশোর নিউমার্কেটের <span class="font-bold text-red-600">মহিলাদের ওয়াশরুম</span> থেকে দলবদ্ধভাবে হাসতে হাসতে বের হতে দেখা গেছে! তাদের এই কুকর্মে সহায়তা করেন আরেক বন্ধু <span class="font-bold text-red-600">'আম্মার'</span>, যিনি বাইরে থেকে দরজা খুলে পাহারা দিচ্ছিলেন বলে জানা গেছে।
             </p>
 
-            <!-- ভিডিও যোগ করার জায়গা -->
+            <!-- ... (ভিডিও সেকশন) ... -->
             <div class="w-full bg-gray-800 border-4 border-dashed border-gray-500 rounded-lg p-4 text-center aspect-video flex items-center justify-center mb-4">
                 <div>
-                    <!-- মোবাইলের জন্য টেক্সট সাইজ অ্যাডজাস্ট করা হলো -->
-                    
-    
                     <video controls class="w-full rounded-lg"><source src="VID-20251103-WA0000.mp4" type="video/mp4"></video>
                 </div>
             </div>
@@ -134,6 +123,7 @@
                 সেই চাঞ্চল্যকর ভিডিও ফুটেজ, যেখানে অভিযুক্ত তরুণ ও তার সঙ্গীদের মহিলাদের ওয়াশরুম থেকে প্রস্থান করতে দেখা যাচ্ছে। (ভিডিও: গোয়েন্দা ইমন হাসান হৃদয়)
             </p>
 
+            <!-- ... (বাকি আর্টিকেল টেক্সট) ... -->
             <p>
                 প্রত্যক্ষদর্শী এক ক্লিনার (নাম গোপন রাখা হলো) জানান, "আমি তো দেইখা তাজ্জব! ৫-৬টা জোয়ান পোলা মাইয়াগো বাথরুম থেইকা খিলখিল কইরা হাসতে হাসতে বাইর হইতাছে। ভিতরে কী এমন মধু পাইছিলো আল্লাহ মালুম। আমি ঝাড়ু নিয়া ধাওয়া দিতেই দৌড় দিছে।"
             </p>
@@ -146,7 +136,7 @@
 
         </article>
 
-        <!-- আসল কথা (Disclaimer) -->
+        <!-- ... (Disclaimer) ... -->
         <div class="mt-12 bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-3 sm:px-4 py-3 shadow-md" role="alert">
             <div class="flex">
                 <div class="py-1"><svg class="fill-current h-6 w-6 text-blue-500 mr-2 sm:mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zM9 11v4h2v-4H9zm0-4h2v2H9V7z"/></svg></div>
@@ -168,49 +158,42 @@
     <section class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg mt-6 p-4 sm:p-6 md:p-8">
         <h3 class="text-xl sm:text-2xl font-bold mb-4 border-b pb-2">মতামত (৮)</h3>
         <div class="space-y-4">
-            <!-- ফেইক কমেন্ট ১ -->
+            <!-- ... (সব কমেন্ট এখানে) ... -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg"> ইয়াসির আরাফাত সিয়াম (মহাবাড়াচার্য)</p>
                 <p class="text-xs sm:text-sm text-gray-500">১ ঘণ্টা আগে</p>
                 <p class="mt-2 text-sm sm:text-base">আমি আগেই বলেছিলাম! এই ছেলেরে ধইরা চিকিৎসা করানো দরকার।</p>
             </div>
-            <!-- ফেইক কমেন্ট ২ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">আয়মন শিকদার</p>
                 <p class="text-sm text-gray-500">৪৫ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">মাইয়াগো বাথরুমে ওগো কী কাম? ছিঃ ছিঃ!</p>
             </div>
-            <!-- ফেইক কমেন্ট ৩ (নতুন) -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">আলামীন আল রাফি</p>
                 <p class="text-sm text-gray-500">৩০ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">এইগুলার লাইগাই সমাজে এত অবক্ষয়। এর একমাত্র সমাধান নির্বাচন!</p>
             </div>
-            <!-- ফেইক কমেন্ট ৪ (নতুন) -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">ইউসুফ</p>
                 <p class="text-sm text-gray-500">২০ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">ছিঃ রাফি, তোর থেকে এইটা আশা করি নাই। তাও শুভ জন্মদিন। এক ম্যাচ Chess হয়ে যাক, নাকি?</p>
             </div>
-            <!-- ফেইক কমেন্ট ৫ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">টি.এ. উৎস</p>
                 <p class="text-sm text-gray-500">১০ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">আরে ভাই এইটা আমি না!! আমি তো কালকে বাড়িতেই ছিলাম না। আমারে কে ফাঁসাইল? রাফি তুই আমার নাম বললি ক্যান??</p>
             </div>
-            <!-- ফেইক কমেন্ট ৬ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">রিত্তিক বালা</p>
                 <p class="text-sm text-gray-500">৬ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">সবই ধোঁকা। এই দুনিয়ায় কিচ্ছু নাই। মাইয়াগুলা সব বেইমান। তার চেয়ে পোলাগো লগে থাকাও ভালো। শুভ জন্মদিন রাফি... চালাইয়া যা।</p>
             </div>
-            <!-- ফেইক কমেন্ট ৭ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">আম্মার বিন চৌধুরী</p>
                 <p class="text-sm text-gray-500">৫ মিনিট আগে</p>
                 <p class="mt-2 text-sm sm:text-base">রিপোর্টার ভাই, ইনফো ভুল আছে। আমি পাহারা দেই নাই। আমি জাস্ট দেখতে গেসিলাম ভিতরে সব ঠিক আছে কিনা।</p>
             </div>
-            <!-- ফেইক কমেন্ট ৮ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">সুম্মে উমাইয়া</p>
                 <p class="text-sm text-gray-500">১ মিনিট আগে</p>
@@ -225,21 +208,32 @@
         <p>এই পোর্টালের সকল সংবাদ কাল্পনিক নয়।<br>শতভাগ সত্য</p>
     </footer>
 
-    <!-- আসল ভিউ কাউন্টের জন্য জাভাস্ক্রিপ্ট -->
+    <!-- 
+      আসল ভিউ কাউন্টের জন্য নতুন, নির্ভরযোগ্য জাভাস্ক্রিপ্ট 
+      এই কোডটি পেজের সব কন্টেন্ট লোড হওয়ার পর কাজ শুরু করবে।
+    -->
     <script>
-        window.onload = function() {
+        // একটি IIFE (Immediately Invoked Function Expression) ব্যবহার করা হচ্ছে
+        // যাতে এটি পেজের বাকি অংশের সাথে কোনো conflict না করে।
+        (function() {
             const viewCountElement = document.getElementById('view-count');
-            if (!viewCountElement) return; // এলিমেন্ট না পেলে কিছুই করবে না
+            if (!viewCountElement) {
+                console.error('View count element not found');
+                return;
+            }
 
-            // আপনার এই পেজের জন্য একটি ইউনিক নাম দিন
-            // এই নামটি পরিবর্তন করবেন না, করলে কাউন্টার রিসেট হয়ে যাবে
+            // এই Key নামটি পরিবর্তন করবেন না। এটি এই পেজের জন্য ইউনিক।
+            // পরিবর্তন করলে কাউন্টার ০ থেকে শুরু হবে।
             const counterKey = 'oxytocin-news-rafi-bday-2025';
-            
-            // countapi.xyz-কে কল করা হচ্ছে
             const apiUrl = `https://api.countapi.xyz/hit/oxytocin-news/${counterKey}`;
 
             fetch(apiUrl)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     if (data.value) {
                         // সংখ্যাকে কমা দিয়ে ফরম্যাট করা (যেমন: ১,২৫০)
@@ -248,17 +242,19 @@
                         // বাংলা টেক্সট সহ দেখানো
                         viewCountElement.innerText = `${formattedViews} বার`;
                     } else {
-                        viewCountElement.innerText = 'লোড হচ্ছে...';
+                        // যদি কোনো কারণে data.value না আসে
+                        viewCountElement.innerText = '... বার';
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching view count:', error);
-                    // যদি কোনো কারণে এপিআই কাজ না করে
-                    viewCountElement.innerText = '... বার'; 
+                    console.error('View counter error:', error);
+                    // যদি API কল ফেইল হয়, তাহলে এটি দেখাবে
+                    viewCountElement.innerText = 'Loading...'; 
                 });
-        };
+        })();
     </script>
+
 </body>
 </html>
 
-                        
+    
