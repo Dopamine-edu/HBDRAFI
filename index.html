@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- এই মেটা ট্যাগটি রেসপনসিভ ডিজাইনের জন্য সবচেয়ে গুরুত্বপূর্ণ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>অক্সিটোসিন নিউজ ১৩</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -78,10 +78,18 @@
                 <p class="text-red-600 font-bold text-base sm:text-lg">বিশেষ অনুসন্ধানী দল</p>
                 <p class="text-gray-500 text-xs sm:text-sm">প্রকাশিত: ৩ নভেম্বর ২০২৫, রাত ১০:৫৭</p>
             </div>
-            <!-- ফেইক শেয়ার বাটন -->
-            <div class="flex space-x-2">
+            <!-- ফেইক শেয়ার বাটন ও ভিউ কাউন্ট -->
+            <div class="flex items-center space-x-2">
                 <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Share</span>
                 <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Tweet</span>
+                <!-- ভিউ কাউন্ট Element -->
+                <div class="flex items-center space-x-1 text-gray-600 ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span id="view-count" class="text-sm font-semibold text-gray-700">লোড হচ্ছে...</span>
+                </div>
             </div>
         </div>
 
@@ -107,7 +115,7 @@
                 নাম প্রকাশে অনিচ্ছুক (তবে তার বন্ধুরা তাকে 'রিজওয়ান মাহদী রাফি' বা 'Rafi' বলে ডাকে) এই তরুণকে সম্প্রতি তার আরেক পুরুষ বন্ধু <span class="font-bold text-red-600">'উৎস'</span>-এর সাথে তার বেডরুমে অন্তরঙ্গ অবস্থায় দেখা গেছে। উপরে সংযুক্ত ছবিটি আমাদের হাতে আসার পর আমরা এর পেছনের সত্যতা খুঁজতে থাকি।
             </p>
             <p>
-                শহরের বিশিষ্ট সমাজবিজ্ঞানী ড. আমজাদ হোসেন (বন্ধুমহলে যিনি 'ডিয়ার আমজু' নামেও পরিচিত) এই ছবি দেখে আঁতকে উঠে বলেন, "আমি তো পুরাই শক্! এটা আমাদের সংস্কৃতি না। দুইটা জোয়ান পোলা এমন কইরা একজন আরেকজনকে জড়ায়া ধইরা ঘুমাবে ক্যান? এর মধ্যেই তো 'কিন্তু' আছে। এইভাবেই প্রথমে বন্ধুত্ব, তারপর 'অস্বাভাবিক' সম্পর্ক, আর তার থেকেই ছড়াচ্ছে এইডস।"
+                শহরের বিশিষ্ট সমাজবিজ্ঞানী ড. আমজাদ হোসেন (বন্ধুমহলে যিনি 'ডিয়ার আমজু' নামেও পরিচিত) এই ছবি দেখে আঁতকে উঠে বলেন, "আমি তো পুরাই শক্! এটা আমাদের সংস্কৃতি না। দুইটা জোয়ান পোলা এমন কইরা একজন আরেকজনকে জড়ায়া ধইra ঘুমাবে ক্যান? এর মধ্যেই তো 'কিন্তু' আছে। এইভাবেই প্রথমে বন্ধুত্ব, তারপর 'অস্বাভাবিক' সম্পর্ক, আর তার থেকেই ছড়াচ্ছে এইডস।"
             </p>
             <p>
                 এই তরুণের কুকীর্তি শুধু এখানেই শেষ নয়। আমাদের হাতে আসা এক চাঞ্চল্যকর ভিডিও ফুটেজে দেখা যায়, অভিযুক্ত তরুণ ও তার কতিপয় বন্ধুকে যশোর নিউমার্কেটের <span class="font-bold text-red-600">মহিলাদের ওয়াশরুম</span> থেকে দলবদ্ধভাবে হাসতে হাসতে বের হতে দেখা গেছে! তাদের এই কুকর্মে সহায়তা করেন আরেক বন্ধু <span class="font-bold text-red-600">'আম্মার'</span>, যিনি বাইরে থেকে দরজা খুলে পাহারা দিচ্ছিলেন বলে জানা গেছে।
@@ -182,7 +190,7 @@
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">ইউসুফ</p>
                 <p class="text-sm text-gray-500">২০ মিনিট আগে</p>
-                <p class="mt-2 text-sm sm:text-base">ছিঃ রাফি, তোর থেকে এইটা আশা করি নাই। তাও শুভ জন্মদিন। এক ম্যাচ Chess হয়ে যাক, নাকি?</p>
+                <p class="mt-2 text-sm sm:text-base">ছিঃ রাফি, তোর থেকে এইটা আশা করি নাই। তাও শুভ জন্মদিন। এক ম্যাচ Chess হয়ে যাক, নাকি?</p>
             </div>
             <!-- ফেইক কমেন্ট ৫ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
@@ -194,7 +202,7 @@
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
                 <p class="font-bold text-base sm:text-lg">রিত্তিক বালা</p>
                 <p class="text-sm text-gray-500">৬ মিনিট আগে</p>
-                <p class="mt-2 text-sm sm:text-base">সবই ধোঁকা। এই দুনিয়ায় কিচ্ছু নাই। মাইয়াগুলা সব বেইমান। তার চেয়ে পোলাগো লগে থাকাও ভালো। শুভ জন্মদিন রাফি... চালাইয়া যা।</p>
+                <p class="mt-2 text-sm sm:text-base">সবই ধোঁকা। এই দুনিয়ায় কিচ্ছু নাই। মাইয়াগুলা সব বেইমান। তার চেয়ে পোলাগো লগে থাকাও ভালো। শুভ জন্মদিন রাফি... চালাইয়া যা।</p>
             </div>
             <!-- ফেইক কমেন্ট ৭ -->
             <div class="border p-3 sm:p-4 rounded-lg bg-gray-50">
@@ -217,5 +225,40 @@
         <p>এই পোর্টালের সকল সংবাদ কাল্পনিক নয়।<br>শতভাগ সত্য</p>
     </footer>
 
+    <!-- আসল ভিউ কাউন্টের জন্য জাভাস্ক্রিপ্ট -->
+    <script>
+        window.onload = function() {
+            const viewCountElement = document.getElementById('view-count');
+            if (!viewCountElement) return; // এলিমেন্ট না পেলে কিছুই করবে না
+
+            // আপনার এই পেজের জন্য একটি ইউনিক নাম দিন
+            // এই নামটি পরিবর্তন করবেন না, করলে কাউন্টার রিসেট হয়ে যাবে
+            const counterKey = 'oxytocin-news-rafi-bday-2025';
+            
+            // countapi.xyz-কে কল করা হচ্ছে
+            const apiUrl = `https://api.countapi.xyz/hit/oxytocin-news/${counterKey}`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.value) {
+                        // সংখ্যাকে কমা দিয়ে ফরম্যাট করা (যেমন: ১,২৫০)
+                        const formattedViews = data.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                        
+                        // বাংলা টেক্সট সহ দেখানো
+                        viewCountElement.innerText = `${formattedViews} বার`;
+                    } else {
+                        viewCountElement.innerText = 'লোড হচ্ছে...';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching view count:', error);
+                    // যদি কোনো কারণে এপিআই কাজ না করে
+                    viewCountElement.innerText = '... বার'; 
+                });
+        };
+    </script>
 </body>
 </html>
+
+                        
